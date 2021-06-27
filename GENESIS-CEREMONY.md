@@ -186,7 +186,7 @@ outcomes and many more are outside the Injective foundation and completely in th
 of the community
 
 On initialization of the software, the Injective chain Bonded Proof-of-Stake system will kick in to
-determine the initial validator set (max 100 validators) from the set of `gentx` transactions.
+determine the initial validator set (max 25 validators) from the set of `gentx` transactions.
 More than 2/3 of the voting power of this set must be online and participating in consensus
 in order to create the first block and start the Injective chain.
 

@@ -157,16 +157,16 @@ Generally the steps to create a genesis validator are as follows:
         "signatures": [
           "eBjti1FfcMVbLS10dOCOVjMZWP7kte857hgZl0b68cddY/N3EgpQFjjVX/5Ywlq/Fc4s0t9WL9MIKbQriHpNQQE="
         ]
-}
+    }
     ```
 
-    __**NOTE**__: If you would like to override the memo field use the `--ip` and `--node-id` flags for the `injectived gentx` command above.
+    __**NOTE**__: If you would like to override the memo field use the `--ip` for the `injectived gentx` command above.
 
-6. copy this file to the `gentx` folder in this repo and submit a pull request:
+6. Copy this file to the `gentx` folder in this repo and submit a pull request:
     ```
     cp external-val.json ./gentx/<moniker>.json
     ```
-7.(Optional) Finally, to participate in this ceremony, transfer your INJ genesis stake amount to Peggy proxy contract address (`0xF955C57f9EA9Dc8781965FEaE0b6A2acE2BAD6f3`) and send a message with Ethereum tx hash in discord.
+7.(Optional) Finally, to participate in this ceremony, transfer your INJ genesis amount to Peggy proxy contract address (`0xF955C57f9EA9Dc8781965FEaE0b6A2acE2BAD6f3`) and send a message with Ethereum tx hash in discord.
 
 
 

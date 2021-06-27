@@ -15,10 +15,10 @@ Before you consider participating in this ceremony, please read the entire
 document.
 
 Genesis transactions will be collected on Github in this repository and checked for validity.
-Genesis file collection will terminate on  Monday June 28th 5 PM UTC time. The final recommended genesis file will be published shortly after that time.
+Genesis file collection will terminate on  **Monday June 28th 5 PM UTC time**. The final recommended genesis file will be published shortly after that time.
 
-By participating in this ceremony and submitting a gen-tx, you are making a commitment to your fellow validators
-that you will be around to bring your validator online by the recommended genesis time of Wednesday June 30th 1 PM UTC time to launch the network. Note that you can start `injectived` 
+By participating in this ceremony and submitting a gentx, you are making a commitment to your fellow validators
+that you will be around to bring your validator online by the recommended genesis time of **Wednesday June 30th 1 PM UTC time** to launch the network. Note that you can start `injectived` 
 with the recommended genesis file before that time and, assuming you configure it successfully, it will automatically start the peer-to-peer and consensus processes once the genesis timestamp is reached.
 
 Please keep the following things in mind.
@@ -26,12 +26,11 @@ Please keep the following things in mind.
 1. This process is intended for technically inclined people who have participated in Injective mainnet dry runs or staking testnets.  If you aren't already familiar with this process, you are advised against participating due to the risks involved. There is no need for you to participate if you feel unprepared - 
  you can create a validator or stake INJ any time after launch.
 2. INJ staked during genesis will be at risk of 5% slashing if your validator double signs. If you accidentally misconfigure your validator setup, this can easily happen, and slashed INJ are not expected to be recoverable by any means. Additionally, if you double-sign, your validator will be [tombstoned](https://github.com/cosmos/cosmos-sdk/blob/master/docs/spec/slashing/07_tombstone.md) and you will be required to change operator and signing keys.
-3. INJ staked during genesis or after will be locked up as part of the defense against long range attacks for 3 weeks. They can be re-delegated or undelegated, but will not be transferrable until transfers are enabled through governance.
-
+3. INJ staked during genesis or after will be locked up as part of the defense against long range attacks for 3 weeks. 
 
 
 Anyone who intends to participate in the genesis ceremony must submit a pull request
-containing a valid `gen-tx` to this repository in the `/gentx` folder with a file name like `<moniker>.json`.
+containing a valid `gentx` to this repository in the `/gentx` folder with a file name like `<moniker>.json`.
 and transfer their staked INJ to Peggy contract address from same validator Eth address.
 
 ## Instructions
@@ -39,20 +38,20 @@ and transfer their staked INJ to Peggy contract address from same validator Eth 
 Generally the steps to create a genesis validator are as follows:
 
 1. Install injectived from source
-    ```
+    ```bash
     wget https://github.com/InjectiveLabs/injective-chain-releases/releases/download/v1.0.1-1624754359/linux-amd64.zip
     ```
 
     This zip file will contain two binaries: injectived which is the Injective Chain daemon as well as peggo which is the Injective Chain ERC-20 bridge relayer daemon.
-    Then unzip and add injectived and peggo to your /usr/bin.
+    Then unzip and add `injectived` and `peggo` to your /usr/bin.
 
-    ```
+    ```bash
     mv injectived /usr/bin
     mv peggo /usr/bin
     ```
 
     Verify Versions
-    ```
+    ```bash
     injectived version
     Version dev (f984570)
 
@@ -61,7 +60,7 @@ Generally the steps to create a genesis validator are as follows:
     ```
 
 2. [Setup your validator keys]
-    ```
+    ```bash
     injectived init injective-protocol --chain-id injective-1
     injectived keys add $VALIDATOR_KEY_NAME
     ```
@@ -163,7 +162,7 @@ Generally the steps to create a genesis validator are as follows:
     __**NOTE**__: If you would like to override the memo field use the `--ip` for the `injectived gentx` command above.
 
 6. Copy this file to the `gentx` folder in this repo and submit a pull request:
-    ```
+    ```bash
     cp external-val.json ./gentx/<moniker>.json
     ```
 7.(Optional) Finally, to participate in this ceremony, transfer your INJ genesis amount to Peggy proxy contract address (`0xF955C57f9EA9Dc8781965FEaE0b6A2acE2BAD6f3`) and send a message with Ethereum tx hash in discord.

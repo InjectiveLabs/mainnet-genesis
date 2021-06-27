@@ -36,7 +36,7 @@ and transfer their staked INJ to Peggy contract address from same validator Eth 
 
 Generally the steps to create a genesis validator are as follows:
 
-1. Install `injectived` from source
+1. Install `injectived` from release binary
     ```bash
     wget https://github.com/InjectiveLabs/injective-chain-releases/releases/download/v1.0.1-1624754359/linux-amd64.zip
     ```

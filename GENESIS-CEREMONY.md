@@ -4,15 +4,14 @@ Welcome to the Injective Genesis Validator Ceremony!
 
 ## What is it?
 
-This *is not* the launch of the Injective chain. Before a blockchain like the
-Injective chain can launch, it needs to determine an initial validator set.
+This *is not* the launch of the Injective Chain. Before a blockchain like the
+Injective Chain can launch, it needs to determine an initial validator set.
 
 This is a ceremony to establish a decentralized initial validator set
 that can be recommended for the Genesis State of the Injective Network.
 This validator set is computed from the set of signed `gentx` transactions with non-zero INJ submitted during this genesis ceremony.
 
-Before you consider participating in this ceremony, please read the entire
-document.
+Before you consider participating in this ceremony, please read the entire document.
 
 Genesis transactions will be collected on Github in this repository and checked for validity.
 Genesis file collection will terminate on  **Monday June 28th 5 PM UTC time**. The final recommended genesis file will be published shortly after that time.
@@ -37,12 +36,12 @@ and transfer their staked INJ to Peggy contract address from same validator Eth 
 
 Generally the steps to create a genesis validator are as follows:
 
-1. Install injectived from source
+1. Install `injectived` from source
     ```bash
     wget https://github.com/InjectiveLabs/injective-chain-releases/releases/download/v1.0.1-1624754359/linux-amd64.zip
     ```
 
-    This zip file will contain two binaries: injectived which is the Injective Chain daemon as well as peggo which is the Injective Chain ERC-20 bridge relayer daemon.
+    This zip file will contain two binaries: `injectived` which is the Injective Chain daemon as well as `peggo` which is the Injective Chain ERC-20 bridge relayer daemon.
     Then unzip and add `injectived` and `peggo` to your /usr/bin.
 
     ```bash

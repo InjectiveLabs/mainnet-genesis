@@ -165,7 +165,6 @@ Generally the steps to create a genesis validator are as follows:
     ```bash
     cp external-val.json ./gentx/<moniker>.json
     ```
-7.(Optional) Finally, to participate in this ceremony, transfer your INJ genesis amount to Peggy proxy contract address (`0xF955C57f9EA9Dc8781965FEaE0b6A2acE2BAD6f3`) and send a message with Ethereum tx hash in discord.
 
 
 

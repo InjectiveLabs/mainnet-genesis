@@ -88,7 +88,7 @@ Generally the steps to create a genesis validator are as follows:
       --output-document=external-val.json 
     ```
 
-    Example `genTx` command staking 90inj
+    Example `gentx` command staking 90 INJ
     ```bash
     injectived gentx external-val-key-name   90000000000000000000inj  --chain-id="injective-1"    --moniker="external-validator"  --commission-max-change-rate=0.01     --commission-max-rate=1.0     --commission-rate=0.07 --output-document=external-val.json
     ```
